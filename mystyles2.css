@@ -1,0 +1,497 @@
+/* css styles inspired by conor bailey tutorial found on youtube*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: firebrick;
+
+}
+
+a:hover {
+    opacity: 0.45;
+
+}
+
+.large {
+    font-size: 1.2em;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    color: #b22222;
+}
+
+.small, .small a {
+    color: #b2222293;
+}
+
+.small a:hover {
+    color: #b2222293;
+    transition: .5s;
+}
+
+
+body, #container {
+    background-color: #e9c1c1;
+}
+
+.menu {
+    position: fixed;
+    z-index: 9999;
+    right: 5%;
+    top: 4em;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.menu.active {
+    transform: rotate(-180deg);
+}
+
+.menu span {
+    background: firebrick;
+    width: 100%;
+    height: 3px;
+}
+
+.menu.active span:nth-child(1) {
+    position: absolute;
+    background: firebrick;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.active span:nth-child(3) {
+    position: absolute;
+    background: firebrick;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* nav */
+
+nav {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.nav.active {
+    pointer-events: auto;
+}
+
+
+.nav-left {
+    position: relative;
+    z-index: 10;
+    left: -50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #ddd8d8f5;
+    transition: 0.8s;
+}
+
+.nav-left.active {
+    left: 0;
+    transition: 0.5s;
+}
+
+.nav-left ul {
+    position: relative;
+    top: 35%;
+    left: 10%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-right {
+    position: absolute;
+    z-index: 9;
+    left: -50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #e9c1c193;
+    transition: 0.8s;
+}
+
+
+.nav-right.active {
+    left: 50%;
+    transition: 0.5s;
+}
+
+
+.nav-link {
+    opacity: 0;
+    position: relative;
+    left: -10%;
+}
+
+.nav-link.active {
+    opacity: 1;
+    position: relative;
+    transition: 0.5s;
+    left: 0;
+}
+
+.contact {
+    position: absolute;
+    opacity: 0;
+    bottom: 10%;
+    left: 0;
+    pointer-events: none;
+}
+
+.contact.active {
+    opacity: 1;
+    left: 10%;
+    transition: 0.5s;
+}
+
+
+.kd-logo {
+    position: fixed;
+    top: 1.2em;
+    left: 5.5%;
+    z-index: 100;
+    color: firebrick;
+    font-size: 1em;
+    /* text-transform: uppercase; */
+    pointer-events: none;
+    width: 115px;
+    height: auto;
+    transition: 1s;
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+.kd-logo.active {
+    color: #000;
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+.title {
+    color: firebrick;
+    position: relative;
+    left: 5%;
+    top: 35vh;
+    /* width: 40%; */
+    width: 13%;
+    /* text-transform: uppercase; */
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+p {
+    margin-top: 1em;
+}
+
+.button {
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    color: firebrick;
+    border: 1px solid firebrick;
+    left: 7%;
+    top: 35vh;
+    width: 1.4em;
+    padding: 1em;
+    text-align: center;
+    transition: .5s;
+
+}
+
+.button:hover, #github:hover, #linkedin:hover {
+    cursor: hand;
+    /* background-color: firebrick; */
+    color: #000;
+    transition: .8s;
+}
+
+.btn-outline-danger {
+    color: green;
+    margin: 0 auto;
+    border-color: green;
+}
+
+.btn-outline-danger:hover {
+    background-color:firebrick;
+    color: #e9c1c1;
+    transition: .8s;
+}
+
+
+#img, #image {
+    position: relative;
+    left: 35%;
+    /* top: 10vh; */
+    top: 10vh;
+    height: 400px;
+    border-radius: 50%;
+    width: 63%;
+    height: auto;
+}
+
+#image {
+    height: 100%;
+    filter: grayscale(40%);
+}
+
+h1 {
+    color: firebrick;
+    text-align: center;
+    font-size: 4.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+#links {
+    padding: 1em;
+    color: firebrick;
+    font-size: 2.5em;
+    font-weight: 500;
+    font-family: 'Dawning of a New Day', cursive;
+}
+
+/*media screen*/
+
+/*mobile*/
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+    .title {
+        padding-bottom: 2em;
+        top: 20vh;
+        font-weight: bold;
+        font-size: 2em;
+
+    }
+
+    #professional-experience h2, #vol-experience h2, #education h2  {
+        font-size: 2em;
+        font-weight: 300;
+        font-family: 'Dawning of a New Day', cursive;
+
+    }
+
+    #img, #image {
+        top: 1vh;
+    }
+
+    #experience {
+        color: firebrick;
+    }
+
+    h2 {
+        font-family: 'Dawning of a New Day', cursive;
+    }
+    #icons {
+        width: 50px;
+        height: auto;
+    }
+
+    body, #container {
+        background-color: #e9c1c1;
+        height: 1000px;
+    }
+}
+
+/*desktop*/
+
+@media screen and (min-width: 769px) {
+    .title {
+        font-size: 4em;
+        font-weight: 700;
+        top: 19vh;
+    }
+
+    #img, #image {
+        top: 4vh;
+}
+
+#icons {
+    width: 50px;
+    height: auto;
+}
+
+body, #container {
+    background-color: #e9c1c1;
+    height: 1000px;
+}
+}
+
+/* 
+@media screen and (min-width: 280px) {
+    .title {
+        padding-bottom: 2em;
+        top: 18vh;
+        font-weight: bold;
+        font-size: 2em;
+        padding-left: 5vh;
+        padding-right: 5vh;
+
+    }
+
+    #professional-experience h2, #vol-experience h2, #education h2  {
+        font-size: 2em;
+    }
+
+    #img, #image {
+        top: 1vh;
+} */
+
+#headshot {
+    width: 20em;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+/* #headshotDiv {
+    text-align: center;
+} */
+
+
+#mail {
+    padding-top: 5px;
+}
+
+.kd-logo p {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+#professional-experience h2, #vol-experience h2, #education h2 {
+    color: firebrick;
+    padding-left: 9%;
+    padding-top: 5%;
+    font-size: 2.8em;
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: 500;
+
+}
+
+#professional-experience p, #vol-experience p, #education p {
+    color: #000000c5;
+    padding-left: 5%;
+    padding-top: 3%;
+    font-size: 1.1em;
+
+}
+
+#professional-experience h3, h4 #vol-experience h3, h4, #education h3, h4 {
+    color: firebrick;
+    padding-left: 9%;
+    padding-top: 5%;
+    font-size: 1.8em;
+    font-weight: 800;
+
+}
+
+#professional-experience h3, #vol-experience h3, #education h3 {
+    font-size: 1.5em;
+    padding-top: 5%;
+    font-weight: 800;
+    padding-left: 9%;
+
+}
+
+#professional-experience h4, #vol-experience h4, #education h4 {
+    font-size: 1.1em;
+    padding-top: 2%;
+    padding-left: 9%;
+    color: firebrick;
+    
+    
+}
+
+#professional-experience p, #vol-experience p, #education p {
+    font-size: .8em;
+    padding-top: 2%;
+    padding-left: 9%;
+    
+}
+
+#professional-experience, #vol-experience, #education {
+    width: 55%;
+}
+
+#education {
+    padding-bottom: 5em;
+}
+
+
+/*about katie page*/
+
+#bio {
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 25%;
+    color: #b22222;
+}
+
+#bio h2, h3, h4, h5 {
+    width: 80%;
+    color: firebrick;
+    font-weight: normal;
+    padding-top:3%;
+}
+
+#bio h2 {
+    font-family: 'Dawning of a New Day', cursive;
+    font-weight: 500;
+    font-size: 2.8em;
+}
+
+#bio h3 {
+    font-size: 1.7em;
+}
+
+#bio h4 {
+    padding-left: 0%;
+    font-size: 1.2em;
+}
+
+#bio h5 {
+    padding-bottom: 5em;
+}
+
+/*work and links page*/
+
+#icons {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    top: 35vh;
+    display: inline;
+}
+
+#github, #linkedIn, #email {
+    color: firebrick;
+    width: 43px;
+}
+

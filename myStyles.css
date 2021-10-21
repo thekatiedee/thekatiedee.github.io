@@ -6,6 +6,11 @@
     color: firebrick;
 }
 
+.row {
+    margin-right: 0px!important;
+    margin-left: 0px!important;
+}
+
 body, #container {
     width: 100%;
     height: 100%;

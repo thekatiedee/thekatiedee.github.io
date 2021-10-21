@@ -126,3 +126,12 @@ h3 {
     padding-bottom: .5rem;
 }
 
+#title-divs {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 2rem;
+}
+
+#professional-experience h2 {
+    margin-right: 4px;
+}

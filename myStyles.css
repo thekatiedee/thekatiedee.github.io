@@ -134,7 +134,7 @@ h3 {
 
 /*media queries*/
 
-@media screen and (min-width: 280px) and (max-width: 400px) {
+@media screen and (min-width: 280px) and (max-width: 367px) {
     .title {
         margin-right: 30px !important;
     }
@@ -171,4 +171,23 @@ h3 {
         font-size: 0.8rem;
     }
 
+}
+
+@media screen and (min-width: 368x) and (max-width: 501px) {
+    .title {
+        margin-right: 3rem !important;
+    }
+
+    /* #img {
+        margin-left: 60px !important;
+    } */
+
+    #image {
+        margin-left: 4rem;
+    }
+
+    .col {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
 }

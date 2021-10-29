@@ -6,11 +6,6 @@
     color: firebrick;
 }
 
-.row {
-    margin-right: 0px!important;
-    margin-left: 0px!important;
-}
-
 body, #container {
     width: 100%;
     height: 100%;
@@ -134,4 +129,46 @@ h3 {
 
 #professional-experience h2 {
     margin-right: 4px;
+}
+
+
+/*media queries*/
+
+@media screen and (min-width: 280px) and (max-width: 400px) {
+    .title {
+        margin-right: 2px;
+    }
+
+    #img {
+        margin-left: 34px;
+    }
+
+    /* #col-left {
+        margin-left: 5px;
+    } */
+
+    #professional-experience h2, #vol-experience h2, #education h2, #technologies h2 {
+        font-size: 2.5rem;
+    }
+
+    #education h3 {
+        font-size: 1.3rem;
+    }
+
+    #education #telecom {
+        font-size: 1rem;
+    }
+
+    #education h4 {
+        font-size: 1rem;
+    }
+
+    #techWriterOne .btn .btn-outline-dark {
+        font-size: .8rem;
+    }
+
+    #email {
+        font-size: 0.8rem;
+    }
+
 }

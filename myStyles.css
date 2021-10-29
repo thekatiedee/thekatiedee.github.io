@@ -136,7 +136,7 @@ h3 {
 
 @media screen and (min-width: 280px) and (max-width: 400px) {
     .title {
-        margin-right: 2px;
+        margin-right: 26px;
     }
 
     #img {

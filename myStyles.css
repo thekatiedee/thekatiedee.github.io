@@ -136,11 +136,11 @@ h3 {
 
 @media screen and (min-width: 280px) and (max-width: 400px) {
     .title {
-        margin-right: 26px;
+        margin-right: 30px;
     }
 
     #img {
-        margin-left: 56px;
+        margin-left: 60px;
     }
 
     /* #col-left {

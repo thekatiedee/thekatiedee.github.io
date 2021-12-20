@@ -1,0 +1,179 @@
+/* style sheet for kd portfolio page */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: firebrick;
+}
+
+
+
+
+/* #picture {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+            grid-column-gap: 10px;
+} */
+/* 
+#imageLeft {
+    justify-content: center;
+            align-items: left;
+
+} */
+/* #textRight {
+    justify-content: center;
+    align-items: right;
+} */
+/* 
+img {
+    width: 120px;
+    height: auto;
+} */
+
+/* #logo {
+    width: 80px;
+    height: auto;
+} */
+
+
+#navigation nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navigation nav li {
+    text-align: center;
+    float: left;
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation nav li a {
+    display: inline;
+    padding: 40px;
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 0.5rem;
+
+}
+
+a:hover {
+    color: #000;
+    transition: 0.5s;
+}
+
+
+#navigation nav {
+    width: 116%;
+}
+
+
+#IHC {
+    font-family: 'Dosis', arial;
+    text-align: center;
+    font-size: 3.5rem;
+    color: #000080;
+    font-style: bold;
+}
+
+#sub {
+    font-family: 'Dosis', arial;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #000080;
+}
+
+body {
+    background-color: rgb(218, 193, 193); 
+
+
+}
+
+a {
+    text-decoration: none;
+    color: firebrick;
+
+}
+
+#twitter {
+    margin: 0 auto;
+
+}
+
+
+#foot {
+    margin: 0 auto;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-column-gap: 50px;
+}
+
+#col1 {
+    /* justify-content: center;
+    align-items: center; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#col2 {
+    justify-content: center;
+    /* text-align: right; */
+    align-items: center;
+    text-align: right;
+}	
+
+/* #cookie {
+    text-align: center;	
+    padding-top: 25px;
+    padding-bottom: 20px;
+} */
+
+#aTwitter {
+    padding-left: 6px;
+}
+
+
+#logo {
+    float: right;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 180px;
+    height: auto;
+}
+
+#IHC {
+    clear: right;
+}
+
+#navigation {
+    clear: right;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+#bl {
+    color: #000;
+}
+
+#header {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 4rem;
+}
+
+footer {
+    font-size: 0.8rem;
+}

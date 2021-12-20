@@ -170,10 +170,59 @@ img {
 }
 
 #header {
-    font-family: 'Dawning of a New Day', cursive;
+    font-family: 'Dawning of a New Day', helvetica;
     font-size: 4rem;
 }
 
 footer {
     font-size: 0.8rem;
+}
+
+#big {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+#medium {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+#biggest {
+    font-family: 'Dawning of a New Day', helvetica;
+    font-size: 3.2rem;
+}
+
+#tech ul {
+    list-style-type: circle;
+    color: #000;
+}
+
+#tech li {
+    color: black;
+}
+
+#techcat {
+    font-weight: 400;
+    color: #000;
+}
+
+#techHeader {
+    color: firebrick;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+#linksAlign {
+    text-align: center;
+}
+
+#linksAlign a {
+    font-size: 1.2rem;
+}
+
+#smaller {
+    font-size: 1.1rem;
+    color: #000;
 }
